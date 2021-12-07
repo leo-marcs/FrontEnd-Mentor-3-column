@@ -1,0 +1,135 @@
+* {
+     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+:root {
+    --bg-sedan: hsl(31, 77%, 52%);
+    --bg-suvs: hsl(184, 100%, 22%); 
+    --bg-luxury: hsl(179, 100%, 13%);
+    --font-color1: hsl(0, 0%, 95%);
+    --font-color2: hsla(0, 0%, 100%, 0.75);
+}
+
+
+body {
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+#container {
+    overflow: hidden;
+    border-radius: 10px; 
+    width: 100%;
+    max-width: 924px;
+    margin: 87px auto 40px;
+    margin-top: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    flex: 1;
+    height: 500px; 
+    padding: 48px;
+   
+}
+
+#sedans {
+    background-color: var(--bg-sedan);
+    
+}
+
+#suvs {
+    background-color: var(--bg-suvs);
+}
+
+
+#luxury {
+    background-color: var(--bg-luxury);
+    
+}
+
+#footer p  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 11px;
+    color: black;
+}
+
+img {
+   margin-bottom: 6px;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: var(--font-color1);
+}
+
+p {
+    color: var(--font-color2);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 25px;
+    margin-bottom: 80px;
+    
+}
+
+
+button {
+    width: 148px;
+    height: 46px;
+    border-radius: 45px;
+    border-style: none;
+    background-color: var(--font-color1);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+#sedan-button {
+    color:hsl(31, 77%, 52%);
+}
+
+#sedan-button:hover{
+    color: var(--font-color1); 
+    background-color: var(--bg-sedan);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+#suv-button {
+    color:  hsl(184, 100%, 22%); 
+}
+
+#suv-button:hover{
+    color: var(--font-color1); 
+    background-color: var(--bg-suvs);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+#luxury-button {
+    color:  hsl(179, 100%, 13%);
+}
+
+#luxury-button:hover{
+    color: var(--font-color1); 
+    background-color: var(--bg-luxury);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+
+@media (orientation: portrait) {
+    #container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: initial;
+        max-width: 320px;
+    }
+}
